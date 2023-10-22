@@ -1,0 +1,137 @@
+body{
+    background-color: grey;
+}
+.app{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color:grey;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif;
+}
+.output {
+    margin-left: 16px;
+    width: 40%;
+    background-color: grey;
+    flex-direction: column; 
+    
+    
+  }
+  .code-editor,
+.output {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 0;
+}
+
+  .editor-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%; 
+  }
+  
+  .output-content {
+    background-color: #f5f5f5;
+    padding: 10px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+  }
+.code-editor {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    max-width: 2000px;
+    background-color: grey;
+     margin-top: 2%;
+  }
+  
+  .code-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+  }
+  
+  .code-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .code-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .locked {
+    background-color: #dc3545;
+  }
+  
+  .code-textarea {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    resize: none;
+    overflow: auto;
+  }
+  
+  .code-textarea[readonly] {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+ 
+  .code-toolbar {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  .code-button:first-child {
+    margin-right: 4px;
+  }
+  
+ 
+  .code-button:last-child {
+    display: block;
+    margin-top: 0px;
+    
+  } 
+  
+  .heading{
+    color: #dc3545;
+    font-weight: bolder;
+  }
+  .code-button:last-child {
+    /* min-width: 20px; */
+    width: 20%;
+  }
+  
+ 
+  .code-toolbar .code-button {
+    padding: 8px 16px;
+  }
+  
+  
+  .code-textarea {
+    margin-top: 2px;
+  }
+  @media screen {
+    .code-editor,
+    .output {
+      width: 100%; 
+    }
+  }
